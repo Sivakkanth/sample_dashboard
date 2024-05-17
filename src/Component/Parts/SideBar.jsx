@@ -15,7 +15,7 @@ const SideBar = ({index, setIndex}) => {
     setIndex(index === menuIndex ? 0:menuIndex);
   }
   return (
-    <div class="bg-black h-[90vh] px- rounded-[15px] w-[60px] flex flex-col items-center justify-between">
+    <div class="bg-black h-[90vh] px- rounded-[15px] w-[70px] flex flex-col items-center justify-between">
         <div class="w-full py-[10px] h-full flex flex-col flex-start items-center">
             <p class="text-white text-center font-bold py-[40px]">dappr</p>
             <SideBarButton isOpen={index===0} handleWindow={() => handleWindowIndex(0)} IconName={<IoHomeOutline class="size-5 w-full"/>}/>

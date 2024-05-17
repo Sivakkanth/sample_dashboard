@@ -2,7 +2,7 @@ import Dashboard from './Screen/Dashboard';
 
 function App() {
   return (
-    <div>
+    <div class="w-screen h-screen">
       <Dashboard/>
     </div>
   );
