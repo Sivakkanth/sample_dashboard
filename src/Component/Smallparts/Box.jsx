@@ -3,8 +3,8 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 
 const Box = ({Icon, Balance, Description}) => {
   return (
-    <div class="w-[180px] h-[150px] rounded-[30px] px-4 py-2 m-3 bg-[#D0E1E9] flex flex-col items-start justify-evenly">
-      <div class="w-full flex flex-row items-start justify-between">
+    <div class="w-auto h-[150px] rounded-[30px] px-4 py-2 mx-3 bg-[#D0E1E9] flex flex-col items-start justify-evenly">
+      <div class="w-[170px] flex flex-row items-start justify-between">
         <div class="w-[45px] h-[45px] text-black">{Icon}</div>
         <div class="w-[25px] h-[25px] p-[2.5px] rounded-[15px] text-black mx-2 hover:bg-black hover:text-white cursor-pointer"><HiOutlineDotsVertical class="w-full h-full"/></div>
       </div>

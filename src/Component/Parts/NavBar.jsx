@@ -10,10 +10,10 @@ const NavBar = () => {
   return (
     <div class="w-full h-[50px] pl-3 py-3 flex flex-row items-center justify-between">
         <div class="flex flex-row flex-nowrap items-center">
-            <p class="sm:text-[15px] md:text-[20px] lg:text-[25px] font-bold pr-0 sm:pr-3">Good Morning,</p>
+            <p class="hidden min-[350px]:block sm:text-[15px] md:text-[20px] lg:text-[25px] font-bold pr-0 sm:pr-3">Good Morning,</p>
             <p class="sm:text-[15px] md:text-[20px] lg:text-[25px] font-bold">James!</p>
         </div>
-        <div class="flex flex-row flex-center flex-nowrap items-center px-0">
+        <div class="flex flex-row flex-center flex-nowrap items-center px-0 lg:mr-9">
             <NavBarButtons IconName={<MdOutlineDateRange class="w-full h-full"/>}/>
             <NavBarButtons IconName={<TbMessageDots class="w-full h-full"/>}/>
             <NavBarButtons IconName={<IoMdNotificationsOutline class="w-full h-full"/>}/>
