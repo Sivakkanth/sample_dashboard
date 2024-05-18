@@ -7,25 +7,44 @@ const Revenue = () => {
     series: [
       {
         name: "Amount",
-        data: [500, 350, 300, 400, 500, 50, 40, 100, 320],
+        data: [16, 13, 12, 19, 18, 16.5, 15],
       },
       {
         name: "Amount",
-        data: [200, 65, 200, 300, 80, 250, 360, 260, 150],
+        data: [14.5, 16, 17, 17.5, 20, 19, 18],
       },
     ],
     chart: {
       type: "line",
-      height: 180,
+      height: "100%",
+      maxWidth: "100%",
+      fontFamily: "Inter, sans-serif",
+      dropShadow: {
+        enabled: false,
+      },
       toolbar: {
         show: false,
       },
+    },
+    tooltip: {
+      enabled: true,
+      x: {
+        show: false,
+      },
+      y: {
+        show: false,
+      },
+      theme: "dark",
     },
     title: {
       show: false,
     },
     dataLabels: {
       enabled: false,
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 3,
     },
     markers: {
       size: 0,
@@ -47,7 +66,7 @@ const Revenue = () => {
           colors: "#616161",
           fontSize: "12px",
           fontFamily: "inherit",
-          fontWeight: 400,
+          fontWeight: 300,
         },
       },
       categories: [
@@ -58,39 +77,40 @@ const Revenue = () => {
         `Feb ${a+4}`,
         `Feb ${a+5}`,
         `Feb ${a+6}`,
-        `Feb ${a+7}`,
-        `Feb ${a+8}`,
       ],
     },
     yaxis: {
+      show: true,
+      tickAmount: 4,
+      style: {
+        fontFamily: "Inter, sans-serif",
+        cssClass: 'text-xs font-normal'
+      },
       labels: {
-        show:true,
-        style: {
-          colors: "#616161",
-          fontSize: "12px",
-          fontFamily: "inherit",
-          fontWeight: 400,
+        show: true,
+        formatter: function(value) {
+          return value + 'K';
         },
       },
+      min: 0,
     },
     grid: {
       show: true,
       borderColor: "#A6B7BF",
+      strokeDashAarray: 4,
       xaxis: {
         lines: {
           show: false,
         },
       },
       padding: {
-        top: 0,
-        right: 20,
+        top: -26,
+        right: 2,
+        left: 2,
       },
     },
     fill: {
       opacity: 1,
-    },
-    tooltip: {
-      theme: "dark",
     },
   };
 

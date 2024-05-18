@@ -21,7 +21,7 @@ const Home = () => {
                 <InformationBox title={"Invoices overdue"} count={6} percentage={"+2.7"} backColor={"bg-[#D8BCC9]"} textColor={"text-[#78182F]"}/>
               </div>
               <div class="w-full min-[700px]:w-[65%] h-full bg-[#D0E1E9] rounded-[30px] px-5 py-3 m-2 flex flex-col items-center justify-stretch min-[700px]:flex-row min-[700px]:flex-wrap">
-                <div class="w-full flex flex-row items-center justify-between p-0">
+                <div class="w-full flex flex-row items-center justify-between p-0 mb-1">
                   <p class="text-lg font-semibold text-left">Revenue</p>
                   <p class="px-2 rounded-[5px] text-center text-[14px] font-normal leading-tight">Last 7 days vs prior week</p>
                 </div>
