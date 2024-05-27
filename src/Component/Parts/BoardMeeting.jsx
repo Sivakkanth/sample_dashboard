@@ -27,7 +27,7 @@ const BoardMeeting = () => {
       return function cleanup() {
           clearInterval(timer)
       }
-  });
+  }, [time]);
   return (
     <div class="w-[85%] h-[100px] bg-black m-5 rounded-[30px] p-3 flex flex-row flex-nowrap items-start">
       <div class="w-[8px] h-[8px] rounded-[5px] bg-[#75C65F] mt-6 mx-2"></div>
